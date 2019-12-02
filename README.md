@@ -13,6 +13,7 @@
 
 ### How to deploy
 
-1. `sudo docker-compose up -d --scale microservice=N`
+1. `./gradlew build`
+2. `docker-compose up -d --scale microservice=N`
 
 That's it! Replace N with with number of instances of the microservice you need 
