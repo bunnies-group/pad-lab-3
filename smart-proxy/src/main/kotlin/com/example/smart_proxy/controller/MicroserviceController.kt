@@ -17,7 +17,7 @@ class MicroserviceController(private val smartProxyService: SmartProxyService) {
     fun registerMicroservice(request: HttpServletRequest) {
         val remoteAddress = request.getHeader("X-FORWARDED-FOR")?.ifBlank { null } ?: request.remoteAddr
 
-        logger.info("POST request to /microservices by $remoteAddress")
+        logger.info("POST request to /microservices {}", remoteAddress)
 
         smartProxyService.addMicroservice(remoteAddress)
     }

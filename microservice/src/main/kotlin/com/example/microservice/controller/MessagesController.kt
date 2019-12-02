@@ -23,7 +23,7 @@ class MessagesController(private val messageService: MessageService) {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     fun post(@RequestBody dto: MessageCreateDto) {
-        logger.info("POST request to /messages", dto)
+        logger.info("POST request to /messages {}", dto)
 
         messageService.createMessage(dto)
     }
