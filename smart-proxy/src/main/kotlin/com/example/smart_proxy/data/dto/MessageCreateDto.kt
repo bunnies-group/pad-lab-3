@@ -1,6 +1,7 @@
 package com.example.smart_proxy.data.dto
 
 import com.squareup.moshi.JsonClass
+import java.io.Serializable
 import javax.validation.constraints.Min
 import javax.validation.constraints.NotBlank
 
@@ -15,4 +16,4 @@ data class MessageCreateDto(@NotBlank(message = "Author name should not be blank
 @JsonClass(generateAdapter = true)
 data class MessageDto(val id: String,
                       val author: String,
-                      val text: String)
+                      val text: String) : Serializable
