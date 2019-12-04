@@ -1,4 +1,4 @@
-package com.example.microservice.persistance.entity
+package com.example.microservice.persistence.entity
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document

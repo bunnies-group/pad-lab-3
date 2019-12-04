@@ -2,8 +2,8 @@ package com.example.microservice.service.implementation
 
 import com.example.microservice.data.dto.MessageCreateDto
 import com.example.microservice.data.dto.MessageDto
-import com.example.microservice.persistance.dao.MessageDAO
-import com.example.microservice.persistance.entity.Message
+import com.example.microservice.persistence.dao.MessageDAO
+import com.example.microservice.persistence.entity.Message
 import com.example.microservice.service.MessageService
 import org.springframework.stereotype.Service
 

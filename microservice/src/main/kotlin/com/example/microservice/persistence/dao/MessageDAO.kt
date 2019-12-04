@@ -1,6 +1,6 @@
-package com.example.microservice.persistance.dao
+package com.example.microservice.persistence.dao
 
-import com.example.microservice.persistance.entity.Message
+import com.example.microservice.persistence.entity.Message
 import org.springframework.data.mongodb.repository.MongoRepository
 
 interface MessageDAO : MongoRepository<Message, String>
